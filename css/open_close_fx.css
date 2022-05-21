@@ -1,0 +1,150 @@
+/* fading */
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+	opacity: 0 !important;
+}
+.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+	-webkit-transition-delay: .15s !important; 
+	transition-delay: .15s !important;
+}
+
+
+/* zoom-in */
+.lcl_zoomin_oc.lcl_pre_show #lcl_window,
+.lcl_zoomin_oc.lcl_is_closing #lcl_window {
+	opacity: 0 !important;
+	
+	-webkit-transform: scale(0.05) translateZ(0) !important;
+	transform: scale(0.05) translateZ(0) !important;		
+}
+.lcl_zoomin_oc.lcl_is_closing #lcl_overlay {
+	opacity: 0 !important;
+}
+
+
+/* bottom-to-top */
+.lcl_bottop_oc.lcl_pre_show #lcl_overlay,
+.lcl_bottop_oc.lcl_is_closing #lcl_overlay {
+	opacity: 0 !important;
+}
+.lcl_bottop_oc.lcl_pre_show #lcl_window {
+	transition-property: transform !important;
+	opacity: 1 !important;
+	
+	-webkit-transform: translate3d(0, 100vh, 0);
+	transform: translate3d(0, 100vh, 0);
+}
+.lcl_bottop_oc.lcl_is_closing #lcl_window {
+	-webkit-transform: translate3d(0, -100vh, 0);
+	transform: translate3d(0, -100vh, 0);
+}
+
+
+/* bottom-to-top v2 */
+.lcl_bottop_v2_oc.lcl_pre_show #lcl_window,
+.lcl_bottop_v2_oc.lcl_is_closing #lcl_window {
+	opacity: 0 !important;
+	
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+.lcl_bottop_v2_oc.lcl_pre_show #lcl_window {
+	top: 40vh;
+}
+.lcl_bottop_v2_oc.lcl_is_closing #lcl_window {
+	top: -40vh;
+	
+	 -webkit-transform: scale(0.8) translateZ(0);
+	transform: scale(0.8) translateZ(0);
+	
+	-webkit-transition-delay: 0s !important; 
+	transition-delay: 0s !important;	
+}
+.lcl_bottop_v2_oc.lcl_pre_show #lcl_overlay {
+	top: 100vh;	
+}
+.lcl_bottop_v2_oc.lcl_is_closing #lcl_overlay {
+	top: -100vh;	
+}
+
+
+/* right to left */
+.lcl_rtl_oc.lcl_pre_show #lcl_overlay,
+.lcl_rtl_oc.lcl_is_closing #lcl_overlay {
+	opacity: 0 !important;
+}
+.lcl_rtl_oc.lcl_pre_show #lcl_window,
+.lcl_rtl_oc.lcl_is_closing #lcl_window {
+	opacity: 1 !important;
+	-webkit-transform: scale(.8) translateZ(0);
+	transform: scale(.8) translateZ(0);	
+}
+
+.lcl_rtl_oc.lcl_pre_show #lcl_window {
+	left: -100vw;
+}
+.lcl_rtl_oc.lcl_is_closing #lcl_window {
+	left: 100vw;  
+}
+.lcl_rtl_oc.lcl_is_closing #lcl_overlay {
+	-webkit-transition-delay: .2s !important; 
+	transition-delay: .2s !important;
+}
+
+
+/* horizontal flip */
+.lcl_horiz_flip_oc.lcl_pre_show #lcl_overlay,
+.lcl_horiz_flip_oc.lcl_is_closing #lcl_overlay {
+	opacity: 0 !important;
+}
+.lcl_horiz_flip_oc.lcl_pre_show #lcl_window,
+.lcl_horiz_flip_oc.lcl_is_closing #lcl_window {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+.lcl_horiz_flip_oc.lcl_pre_show #lcl_window {
+	-webkit-transform: rotateY(90deg) perspective(800px);
+	transform: rotateY(90deg) perspective(800px);	
+}
+.lcl_horiz_flip_oc.lcl_is_closing #lcl_window {
+	-webkit-transform: rotateY(-90deg) scale(.8) perspective(800px);
+	transform: rotateY(-90deg) scale(.8) perspective(800px);	
+}
+.lcl_horiz_flip_oc.lcl_is_closing #lcl_overlay {
+	-webkit-transition-delay: .2s !important; 
+	transition-delay: .2s !important;
+}
+
+
+/* vertical flip */
+.lcl_vert_flip_oc.lcl_pre_show #lcl_overlay,
+.lcl_vert_flip_oc.lcl_is_closing #lcl_overlay {
+	opacity: 0 !important;
+}
+.lcl_vert_flip_oc.lcl_pre_show #lcl_window,
+.lcl_vert_flip_oc.lcl_is_closing #lcl_window {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+.lcl_vert_flip_oc.lcl_pre_show #lcl_window {
+	-webkit-transform: rotateX(-90deg) perspective(1000px);
+	transform: rotateX(-90deg) perspective(1000px);	
+}
+.lcl_vert_flip_oc.lcl_is_closing #lcl_window {
+	opacity: .5 !important;
+	
+	-webkit-transform: rotateX(90deg) scale(.6) perspective(1000px);
+	transform: rotateX(90deg) scale(.6) perspective(1000px);	
+}
+.lcl_vert_flip_oc.lcl_is_closing #lcl_overlay {
+	-webkit-transition-delay: .2s !important; 
+	transition-delay: .2s !important;
+}
