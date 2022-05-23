@@ -1,12 +1,12 @@
 @font-face {
 	font-family: 'lc_lightbox';
-/*
-	src:url('fonts/lc_lightbox.eot');
-	src:url('fonts/lc_lightbox.eot') format('embedded-opentype'),
-		url('fonts/lc_lightbox.woff') format('woff'),
-		url('fonts/lc_lightbox.ttf') format('truetype'),
-		url('fonts/lc_lightbox.svg') format('svg');
-*/
+
+	src:url('https://raw.githubusercontent.com/deep-image/deep-image/main/css/fonts/lc_lightbox.eot');
+	src:url('https://raw.githubusercontent.com/deep-image/deep-image/main/css/fonts/lc_lightbox.eot') format('embedded-opentype'),
+		url('https://raw.githubusercontent.com/deep-image/deep-image/main/css/fonts/lc_lightbox.woff') format('woff'),
+		url('https://raw.githubusercontent.com/deep-image/deep-image/main/css/fonts/lc_lightbox.ttf') format('truetype'),
+		url('https://raw.githubusercontent.com/deep-image/deep-image/main/css/fonts/lc_lightbox.svg') format('svg');
+
 	font-weight: normal;
 	font-style: normal;
 }
