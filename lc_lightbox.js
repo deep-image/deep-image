@@ -343,7 +343,7 @@
 				if(already_man) {
 					var el = already_man; 	
 				}	
-				/* rameez edit
+		
 				else {
 			
 					var type = el_type_finder(src, $e.data('lcl-type'));  
@@ -392,7 +392,7 @@
 						} 
 				
 					}
-							*/
+		
 					else {
 						var el = {
 							src 	: src,
