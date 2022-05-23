@@ -342,9 +342,10 @@
 				var already_man = obj_already_man(hash);
 				if(already_man) {
 					var el = already_man; 	
-				}
+				}	
+				/* rameez edit
 				else {
-				/*
+			
 					var type = el_type_finder(src, $e.data('lcl-type'));  
 						
 					// compose
@@ -389,8 +390,9 @@
 								el.poster = $e.data('lcl-poster');
 							}
 						} 
-						*/
+				
 					}
+							*/
 					else {
 						var el = {
 							src 	: src,
