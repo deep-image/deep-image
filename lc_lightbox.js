@@ -344,6 +344,7 @@
 					var el = already_man; 	
 				}
 				else {
+				/*
 					var type = el_type_finder(src, $e.data('lcl-type'));  
 						
 					// compose
@@ -388,6 +389,7 @@
 								el.poster = $e.data('lcl-poster');
 							}
 						} 
+						*/
 					}
 					else {
 						var el = {
